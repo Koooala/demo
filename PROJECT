@@ -1,0 +1,10 @@
+domain: demo.com
+repo: demo.com
+resources:
+- group: infra
+  kind: Object
+  version: v1
+- group: infra
+  kind: Merry
+  version: v1
+version: "2"

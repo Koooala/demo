@@ -1,0 +1,7 @@
+apiVersion: infra.demo.com/v1
+kind: Merry
+metadata:
+  name: merry-sample
+spec:
+  # Add fields here
+  foo: bar

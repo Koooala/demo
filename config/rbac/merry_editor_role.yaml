@@ -1,0 +1,24 @@
+# permissions for end users to edit merries.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: merry-editor-role
+rules:
+- apiGroups:
+  - infra.demo.com
+  resources:
+  - merries
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - infra.demo.com
+  resources:
+  - merries/status
+  verbs:
+  - get
